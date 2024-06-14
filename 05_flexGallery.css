@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Atma', sans-serif;
+}
+
+#container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container > div {
+    height: 100vh;
+    width: 20vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+    font-size: 36px;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    font-weight: bold;
+    transition: flex 0.5s ease-in-out;
+}
+
+.box {
+    flex: 1;
+    cursor: pointer;
+}
+
+.box p:first-child {
+    transform: translateY(-500%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.box p:last-child {
+    transform: translateY(500%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.box.active {
+    flex: 2;
+    transition: all 4s ease; 
+}
+.box.active>p{
+    font-size: 45px;
+}
+
+.box.active p:first-child {
+    transform: translateY(0);
+}
+
+.box.active p:last-child {
+    transform: translateY(0);
+}
+
+.box-1 {
+    background-image: url("https://media.istockphoto.com/id/937694668/photo/blue-sky-with-cloud-summer-sky-nature-background.jpg?s=2048x2048&w=is&k=20&c=JNdQVCKZWuiEEsj1NF_IfbPD86Wf6xq82DlbH7HQHxY=");
+}
+
+.box-2 {
+    background-image: url("https://images.unsplash.com/photo-1528155124528-06c125d81e89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXVyb3JhfGVufDB8fDB8fHww");
+}
+
+.box-3 {
+    background-image: url("https://images.unsplash.com/photo-1554629947-334ff61d85dc?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.box-4 {
+    background-image: url("https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?q=80&w=1897&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.box-5 {
+    background-image: url("https://images.unsplash.com/photo-1559825481-12a05cc00344?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}

@@ -1,0 +1,37 @@
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --spacing:10px;
+    --blur:10px;
+    --baseColor: #ffc600;
+}
+
+body{
+    background-color: #212121;
+}
+#heading{
+    text-align: center;
+    color: azure;
+}
+#js{
+    color:var(--baseColor)
+}
+.controls{
+    color:antiquewhite;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+#buildings{
+    margin-left: 5%;
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+    background-color: var(--baseColor);
+    height: 60vh;
+    width: max-content;
+}

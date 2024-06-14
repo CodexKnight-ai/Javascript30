@@ -1,0 +1,41 @@
+body{
+    background-image: url("https://media.istockphoto.com/id/1456348006/photo/modern-abstract-background.jpg?s=612x612&w=0&k=20&c=aQy0b6x6iQUdBf9Y0lN_bD-WyiNazq02StUtQMmA8T4=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    height: 400px;
+    width: 400px;
+    border: solid white 6px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.hands{
+    width: 20%;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    background-color: black;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+}
+.seconds{
+    width:48%;
+    top:50%;
+    left:2%;
+}
+.minute{
+    width:44%;
+    top:50%;
+    left:6%;
+}
+.hour{
+    width:35%;
+    top:50%;
+    left:15%;
+}

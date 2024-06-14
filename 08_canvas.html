@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas"></canvas>
+</body>
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+ctx.strokeStyle='aqua'
+ctx.lineJoin='round'
+ctx.lineCap='round'
+
+isDrawing=false
+
+function Draw(e){
+    console.log(e)
+}
+canvas.addEventListener('mousemove', Draw)
+</script>
+</html>
